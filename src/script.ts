@@ -1,8 +1,8 @@
-const greet = (n: string): void => {
-  console.log(`Hello, ${n}!`);
-};
+// const greet = (n: string): void => {
+//   console.log(`Hello, ${n}!`);
+// };
 
-greet("Israk");
+// greet("Israk");
 
 //------------TYPES BASIC------------//
 
@@ -16,3 +16,15 @@ let nums: number[] = [2, 4, 5, 6];
 let ids: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 console.log(nname, isStudent, something, u, n, nums, ids, age);
+
+// Functions with Types
+function greet(name: string): string {
+  return `Hello, ${name}!`;
+}
+const message = greet("israk");
+console.log(message);
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+console.log(add(2, 3));
